@@ -1,0 +1,29 @@
+{
+  "name": "rfilter",
+  "version": "1.0.0",
+  "description": "Filter stdin by a Regular Expression and output to stdout.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "filter",
+    "regex",
+    "regexp",
+    "pipe",
+    "grep",
+    "stdio",
+    "stdin",
+    "stdout"
+  ],
+  "author": "Jeremiah Senkpiel <fsihrock123@rockemmail.com> (https://searchbeam.jit.su)",
+  "license": "ISC",
+  "repository": "Fishrock123/rfilter",
+  "bin": "index.js",
+  "files": "index.js",
+  "preferGlobal": true,
+  "node": ">=4.0.0",
+  "directories": {
+    "man": "doc"
+  }
+}
