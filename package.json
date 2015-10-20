@@ -4,7 +4,7 @@
   "description": "Filter stdin lines by a Regular Expression and output to stdout.",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "test": "tap test.js"
   },
   "keywords": [
     "filter",
@@ -21,6 +21,9 @@
   "repository": "Fishrock123/rfilter",
   "bin": "index.js",
   "files": "index.js",
+  "devDependencies": {
+    "tap": "2"
+  },
   "preferGlobal": true,
   "node": ">=4.0.0",
   "directories": {
