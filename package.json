@@ -1,7 +1,7 @@
 {
   "name": "rfilter",
   "version": "1.0.0",
-  "description": "Filter stdin by a Regular Expression and output to stdout.",
+  "description": "Filter stdin lines by a Regular Expression and output to stdout.",
   "main": "index.js",
   "scripts": {
     "test": "test.js"
