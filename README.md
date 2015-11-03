@@ -3,6 +3,7 @@
 [![CI Status][travis-image]][travis-url]
 
 Filter stdin lines by a Regular Expression and output to stdout.
+Implies the `m` JavaScript regex flag.
 
 Kinda like `grep` but uses JavaScript regex syntax.
 
