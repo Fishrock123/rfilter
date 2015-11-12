@@ -21,6 +21,9 @@
   "repository": "Fishrock123/rfilter",
   "bin": "index.js",
   "files": "index.js",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
   "devDependencies": {
     "tap": "2"
   },

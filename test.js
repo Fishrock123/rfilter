@@ -19,3 +19,22 @@ tap.test('The example works correctly', (t) => {
 
   t.end()
 })
+
+tap.test('-i option works correctly', (t) => {
+  const output = cp.spawnSync(
+      'node',
+      ['index.js', 'b', '-i'],
+      { encoding: 'utf8', input: 'aaa\nBBB\nccc\nbird\nBubBles\n' })
+
+  t.ok(output, 'Got stdout')
+
+  t.ok(!output.error, 'No error')
+  if (output.error) throw output.error
+
+  t.equal(output.status, 0, 'Status is zero')
+  if (output.status !== 0) t.bailout(output.stderr)
+
+  t.equal(output.stdout, 'BBB\nbird\nBubBles\n', 'Output was correct')
+
+  t.end()
+})

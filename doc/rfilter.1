@@ -12,6 +12,9 @@ rfilter \-\- filter stdin by a JavaScript regex
 [
 .I regex
 ]
+[
+.B -i
+]
 
 .SH VERSION
 1.0.0
@@ -22,3 +25,8 @@ Filter stdin by a JavaScript Regular Expression and output to stdout.
 Implies the 'm' JavaScript regex flag.
 
 Kinda like 'grep' but uses JavaScript regex syntax.
+
+.SH Options
+
+.B  -i
+Enables the JavaScript case-insensitive ('i') flag on the regex.
