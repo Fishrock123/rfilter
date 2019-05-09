@@ -28,7 +28,6 @@
     "tap": "2"
   },
   "preferGlobal": true,
-  "node": ">=4.0.0",
   "directories": {
     "man": "doc"
   }
