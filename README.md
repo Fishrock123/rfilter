@@ -21,7 +21,8 @@ bird
 
 ## Options
 
-- `-i` Enables the JavaScript case-insensitive (`'i'`) flag on the regex. 
+- `-i` Enables the JavaScript case-insensitive (`'i'`) flag on the regex.
+- `--inverse` Filters by lines that do not match.
 
 [travis-image]: https://travis-ci.org/Fishrock123/rfilter.svg?branch=master
 [travis-url]: https://travis-ci.org/Fishrock123/rfilter

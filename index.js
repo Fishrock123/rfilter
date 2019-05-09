@@ -15,6 +15,10 @@ const regex = new RegExp(args._[0], args.i ? 'i' : '')
 const rl = readline.createInterface({
   input: process.stdin,
 }).on('line', line => {
-  if (!regex.test(line)) return
+  let match = regex.test(line)
+  if (args.inverse) match = !match
+
+  if (!match) return
+
   process.stdout.write(line + '\n')
 })
